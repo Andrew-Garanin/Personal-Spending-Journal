@@ -1,0 +1,51 @@
+<div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="cell">
+                    <h2>Анализ трат по категории <%=@max_cheque.category%> </h2>
+                    <a href=<%=cheques_path%>/categories>Назад к списку</a>
+                </div>
+
+                <div class="cell">
+                    <h4>Максимальная трата по категории</h4>
+                    <p>Время: <%=@max_cheque.date%></p>
+                    <p>Место: <%=@max_cheque.place%></p>
+                    <p>Товар: <%=@max_cheque.product%></p>
+                    <p>Стоимость: <%=@max_cheque.price%> руб.</p>
+                </div>
+
+                <div class="cell">
+                    <h4>Минимальная трата по категории</h4>
+                    <p>Время: <%=@min_cheque.date%></p>
+                    <p>Место: <%=@min_cheque.place%></p>
+                    <p>Товар: <%=@min_cheque.product%></p>
+                    <p>Стоимость: <%=@min_cheque.price%> руб.</p>
+                </div>
+
+                <div class="cell">
+                    <h4>Траты за последний месяц по категории</h4>
+                    <table>
+                        <thead>
+                        
+                            <tr>
+                                <th>Дата</th>
+                                <th>Место</th>
+                                <th>Товар</th>
+                                <th>Количество</th>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <% @cheques_dates.each do |cheque| %>
+                            <tr>
+                                <td><%=cheque.date%></td>
+                                <td><%=cheque.place%></td>
+                                <td><%=cheque.product%></td>
+                                <td><%=cheque.count%></td>
+                                <td><%=cheque.price%> руб.</td>
+                            </tr>
+                            <% end %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Журнал персональных трат</title>
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel="stylesheet" href="/css/app.css">
+  </head>
+  <body>
+    <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li>
+                        <a href="/cheques">Стартовая страница</a>
+                    </li>
+                    <li>
+                        <a href="/cheques/months">Анализ по месяцам</a>
+                    </li>
+                    <li>
+                        <a href="/cheques/categories">Анализ по категориям</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      <%= yield %>
+    </div>
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/what-input.js"></script>
+    <script src="/js/vendor/foundation.js"></script>
+  </body>
+</html>

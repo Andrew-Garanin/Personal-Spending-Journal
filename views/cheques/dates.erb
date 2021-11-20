@@ -1,0 +1,19 @@
+<div class="grid-x grid-margin-x">
+    <div class="large-4 cell">
+        <table>
+            <thead>
+                <tr>
+                    <th>Анализ по месяцам</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% @dates.each do |month| %>
+                    <tr>
+                        <td> Траты за <a href="months/<%=month%>"> <%= month %> </a> </td>
+                    </tr>
+                <% end %>
+            </tbody>
+        </table>
+    </div>
+</div>
+<a class="button secondary" href="<%= cheques_path %>">Назад к списку счетов</a>
