@@ -5,5 +5,5 @@ Application with little functionality, written as an exam work.
 
 # Interface screenshots:
 <img src="https://github.com/Andrew-Garanin/Personal-Spending-Journal/blob/master/screenshots/Screenshot_1.jpg" width="1900" height="600"/>
-<img src="https://github.com/Andrew-Garanin/Personal-Spending-Journal/blob/master/screenshots/Screenshot_2.jpg" width="1900" height="700"/>
-<img src="https://github.com/Andrew-Garanin/Personal-Spending-Journal/blob/master/screenshots/Screenshot_3.jpg" width="1900" height="700"/>
+<img src="https://github.com/Andrew-Garanin/Personal-Spending-Journal/blob/master/screenshots/Screenshot_2.jpg" width="1900" height="600"/>
+<img src="https://github.com/Andrew-Garanin/Personal-Spending-Journal/blob/master/screenshots/Screenshot_3.jpg" width="1900" height="600"/>
